@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Steckbrief</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Aptos, sans-serif;
+            background: #f4f6f9;;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #001f3f, #003366);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        header h1 {
+            margin-top: 15px;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            color: dark grey;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 31, 63, 0.15);
+            text-align: center;
+        }
+
+.contact-card {
+    background: linear-gradient(
+        135deg,
+        #d8f3dc 0%,
+        #b7e4c7 50%,
+        #95d5b2 100%
+    );
+    color: #1f2937;
+}
+
+
+.contact-card h2 {
+    color: #2d6a4f;
+}
+
+.contact-card a {
+    color: #2d6a4f;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    color: #1b4332;
+    text-decoration: underline;
+}
+}
+
+        h2 {
+            color: #001F3F;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            display: inline-block;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        a {
+            color: #003366;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .gallery {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+.slideshow-container {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+.slide {
+    text align: center;
+}
+
+.slide img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.caption {
+    margin-top: 10px;
+    text align: center;
+    font-size: 18px;
+    font-style: italic;
+    color: #001f3f;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+        .timeline {
+            border-left: 3px solid #001f3f;
+            margin-left: 20px;
+            padding-left: 25px;
+            text-align: left;
+        }
+
+        .event {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .event::before {
+            content: "";
+            width: 14px;
+            height: 14px;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            left: -33px;
+            top: 5px;
+        }
+
+        .event h3 {
+            color: white;
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #001f3f;
+            color: white;
+            margin-top: 30px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-shrink: 0;
+         }
+
+          .logo-img {
+            height: 60px;
+            width: auto;
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="IMG_1820.jpg" alt="Profilbild">
+        <h1>Linda Penski</h1>
+        <p>Willkommen!</p>
+    </header>
+
+<main>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Über mich</h2>
+            <p>
+                Grias eich! Ich bin Linda, 21 Jahre alt und mache beim BR eine Ausbildung zur Kauffrau für Büromanagement.
+                Das hier sind schonmal Emojis, die mich gut beschreiben: 😄😎🤪☺️☀️
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Meine Hobbys</h2>
+            <ul>
+                <li>Ins Kino gehen 🎬 (mein Lieblingsfilm: F1 🏎️)</li>
+                <li>Zeit mit Bonnie 🐶</li>
+                <li>Sport (Fußball spielen, Gravelbike fahren, Formel 1 schauen, Paddle)</li>
+                <li>Zeit mit Freunden </li>
+                <li>Serie schauen (wenn ich mal eine gute gefunden habe, muss diese auch innerhalb eines Monats durchgeschaut sein 😄)</li>
+            </ul>
+        </div>
+
+<div class="card">
+    <h2>Bilder aus meinem Leben</h2>
+
+    <div class="slideshow-container">
+
+        <div class="slide">
+            <img src="Irland.jpg" alt="Urlaub in Irland">
+            <div class="caption">Urlaub in Irland</div>
+        </div>
+
+        <div class="slide">
+            <img src="Bonnie.jpg" alt="Bonnie">
+            <div class="caption">Bonnie</div>
+        </div>
+
+        <div class="slide">
+            <img src="KiKAninchen.JPG" alt="Das KiKAninchen">
+            <div class="caption">Das KiKAninchen</div>
+        </div>
+
+        <div class="slide">
+            <img src="Libbie.jpg" alt="Libbie">
+            <div class="caption">Libbie</div>
+        </div>
+
+        <div class="slide">
+            <img src="Ski.JPG" alt="Skifahren">
+            <div class="caption">Skifahren</div>
+        </div>
+
+        <div class="slide">
+            <img src="TheWeeknd.JPG" alt="The Weeknd Konzert">
+            <div class="caption">The Weeknd Konzert</div>
+        </div>
+
+</div></div>
+        <div class="card">
+            <h2>Lebenslauf</h2>
+
+            <p>
+                <strong>2024 - heute</strong><br>
+                Ausbildung beim BR
+            </p>
+       
+                <strong>2023 - 2024</strong><br>
+                Gap Year
+
+            <p>
+                <strong>2020 - 2023</strong><br>
+                FOS Erding
+            </p>
+
+            <p>
+                <strong>2015 - 2020</strong><br>
+                Realschule Markt Schwaben
+            </p>
+        </div>
+
+                <div class="card">
+                    <h2>Projekte aus meiner Ausbildung</h2>
+
+                    <p>Hier könnt ihr einen kleinen Einblick in eines meiner Projekte hören:</p>
+
+                    <audio controls style="width:100%; margin-top:10px;">
+                        <source src="01_Lindas Leben.mp3" type="audio/mpeg">
+                    </audio>
+
+</div>
+
+        <div class="card">
+            <h2>Worin bin ich gut?</h2>
+
+            <ul>
+                <li>Kommunikation</li>
+                <li>Teamarbeit</li>
+                <li>Gute Laune durch meine strahlende Persönlichkeit verbreiten 😄</li>
+            </ul>
+        </div>
+
+</div>
+
+        <div class="card contact-card">
+            <h2>Kontakt</h2>
+
+           <p>
+                📧 <a href="mailto:linda.penski@br.de">
+                        linda.penski@br.de
+                   </a>
+            <p>
+
+                🧾 <a href="https://lindapenski-web.github.io/Versuch/">
+                            Mein Steckbrief 
+                   </a>
+            <p>                 
+
+                📍 <a href="https://www.google.com/maps/search/?api=1&query=Floriansmühlstraße+60,+80939+München"
+                      target="_blank">
+                    Floriansmühlstraße 60, 80939 München
+                </a>
+            </p>
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 Linda Penski
+
+        <div class="logo-area">
+            <img src="BR_230410_ws_rgb.png" alt="Mein Logo" class="logo-img">
+            <div class="title-area">
+    </footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 5000);
+}
+</script>
+</body>
+</html>
